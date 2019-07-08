@@ -1,0 +1,57 @@
+lesson,topic_id,url,repo
+Deploy On Day 1,1,https://learn.co/tracks/web-development-immersive-2-0-module-one/deploy-on-day-1-dc-web-062419,deploy-on-day-1-dc-web-062419
+Bonus Collections Practice,2,https://learn.co/tracks/web-development-immersive-2-0-module-one/collections_practice-dc-web-062419,collections_practice-dc-web-062419
+Iteration and Building Hashes - Element Count,3,https://learn.co/tracks/web-development-immersive-2-0-module-one/count-elements-dc-web-062419,count-elements-dc-web-062419
+Apis And Iteration,4,https://learn.co/tracks/web-development-immersive-2-0-module-one/apis-and-iteration-dc-web-062419,apis-and-iteration-dc-web-062419
+Classes and Instances Lab,5,https://learn.co/tracks/web-development-immersive-2-0-module-one/classes-and-instances-lab-ruby-dc-web-062419,classes-and-instances-lab-ruby-dc-web-062419
+Instance Methods,6,https://learn.co/tracks/web-development-immersive-2-0-module-one/,
+Instance Methods Lab,6,https://learn.co/tracks/web-development-immersive-2-0-module-one/instance-methods-lab-ruby-dc-web-062419,instance-methods-lab-ruby-dc-web-062419
+Instance Variables,7,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-instance-variables-lab-dc-web-062419,ruby-instance-variables-lab-dc-web-062419
+Object Attributes Lab,7,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-object-attributes-lab-dc-web-062419,ruby-object-attributes-lab-dc-web-062419
+Meowing Cat,7,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-meowing-cat-dc-web-062419,oo-meowing-cat-dc-web-062419
+Object Initialization Lab,8,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-object-initialize-lab-dc-web-062419,ruby-object-initialize-lab-dc-web-062419
+OO Basics,8,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-basics-dc-web-062419,oo-basics-dc-web-062419
+OO Basics with Class Constants,8,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-basics-with-class-constants-dc-web-062419,oo-basics-with-class-constants-dc-web-062419
+OO School Domain,8,https://learn.co/tracks/web-development-immersive-2-0-module-one/school-domain-dc-web-062419,school-domain-dc-web-062419
+OO Counting Sentences,9,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-counting-sentences-dc-web-062419,oo-counting-sentences-dc-web-062419
+OO Cash Register,9,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-cash-register-dc-web-062419,oo-cash-register-dc-web-062419
+Class Variables and Methods Lab,10,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-class-variables-and-class-methods-lab-dc-web-062419,ruby-class-variables-and-class-methods-lab-dc-web-062419
+Oo Person,11,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-person-dc-web-062419,oo-person-dc-web-062419
+OO Email Parser,12,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-email-parser-dc-web-062419,oo-email-parser-dc-web-062419
+BONUS: OO Anagram Detector,12,https://learn.co/tracks/web-development-immersive-2-0-module-one/anagram-detector-dc-web-062419,anagram-detector-dc-web-062419
+Belongs to Object Lab,13,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-objects-belong-to-lab-dc-web-062419,ruby-objects-belong-to-lab-dc-web-062419
+Has Many Object Lab,13,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-objects-has-many-lab-dc-web-062419,ruby-objects-has-many-lab-dc-web-062419
+Collaborating Objects Lab,13,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-collaborating-objects-lab-dc-web-062419,ruby-collaborating-objects-lab-dc-web-062419
+OO My Pets,13,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-my-pets-dc-web-062419,oo-my-pets-dc-web-062419
+OO Kickstarter,13,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-kickstarter-dc-web-062419,oo-kickstarter-dc-web-062419
+Has Many Objects Through Lab,13,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-objects-has-many-through-lab-dc-web-062419,ruby-objects-has-many-through-lab-dc-web-062419
+Intro to Inheritance,14,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-inheritance-lab-dc-web-062419,ruby-inheritance-lab-dc-web-062419
+Intro to Inheritance Lab,14,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-inheritance-code-along-dc-web-062419,oo-inheritance-code-along-dc-web-062419
+Intro to Modules,14,https://learn.co/tracks/web-development-immersive-2-0-module-one/modules-reading-dc-web-062419,modules-reading-dc-web-062419
+Intro to Modules Lab,14,https://learn.co/tracks/web-development-immersive-2-0-module-one/artist-song-modules-dc-web-062419,artist-song-modules-dc-web-062419
+Super Lab,14,https://learn.co/tracks/web-development-immersive-2-0-module-one/ruby-super-inheritance-lab-dc-web-062419,ruby-super-inheritance-lab-dc-web-062419
+Mass Assignment Lab,15,https://learn.co/tracks/web-development-immersive-2-0-module-one/mass-assignment-dc-web-062419,mass-assignment-dc-web-062419
+Custom Errors,15,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-custom-errors-dc-web-062419,oo-custom-errors-dc-web-062419
+OO Triangle,15,https://learn.co/tracks/web-development-immersive-2-0-module-one/triangle-classification-dc-web-062419,triangle-classification-dc-web-062419
+Gems and Bundler,16,https://learn.co/tracks/web-development-immersive-2-0-module-one/using-bundler-dc-web-062419,using-bundler-dc-web-062419
+Scraping Lab,16,https://learn.co/tracks/web-development-immersive-2-0-module-one/scraping-flatiron-code-along-dc-web-062419,scraping-flatiron-code-along-dc-web-062419
+Kickstarter Scraping Lab,16,https://learn.co/tracks/web-development-immersive-2-0-module-one/scraping-kickstarter-dc-web-062419,scraping-kickstarter-dc-web-062419
+Student Scraper,16,https://learn.co/tracks/web-development-immersive-2-0-module-one/oo-student-scraper-dc-web-062419,oo-student-scraper-dc-web-062419
+SQL Bear Organizer Lab,17,https://learn.co/tracks/web-development-immersive-2-0-module-one/SQL-bear-organizer-lab-dc-web-062419,SQL-bear-organizer-lab-dc-web-062419
+SQL Aggregate Functions Lab,17,https://learn.co/tracks/web-development-immersive-2-0-module-one/sql-aggregate-functions-lab-dc-web-062419,sql-aggregate-functions-lab-dc-web-062419
+SQL Crowdfunding Lab,18,https://learn.co/tracks/web-development-immersive-2-0-module-one/sql-crowdfunding-lab-dc-web-062419,sql-crowdfunding-lab-dc-web-062419
+SQL Library Lab,18,https://learn.co/tracks/web-development-immersive-2-0-module-one/sql-library-lab-dc-web-062419,sql-library-lab-dc-web-062419
+Bonus: The Daily Show with Jon Stewart,18,https://learn.co/tracks/web-development-immersive-2-0-module-one/bonus-sql-challenge-dc-web-062419,bonus-sql-challenge-dc-web-062419
+Mapping Classes to Tables Lab,19,https://learn.co/tracks/web-development-immersive-2-0-module-one/orm-mapping-to-table-lab-dc-web-062419,orm-mapping-to-table-lab-dc-web-062419
+Mapping Database Rows to O...,19,https://learn.co/tracks/web-development-immersive-2-0-module-one/orm-mapping-db-to-ruby-object-lab-dc-web-062419,orm-mapping-db-to-ruby-object-lab-dc-web-062419
+Updating Records in an ORM Lab,19,https://learn.co/tracks/web-development-immersive-2-0-module-one/orm-update-lab-dc-web-062419,orm-update-lab-dc-web-062419
+Bonus: Dynamic ORMs,19,https://learn.co/tracks/web-development-immersive-2-0-module-one/dynamic-orms-readme-dc-web-062419,dynamic-orms-readme-dc-web-062419
+Bonus: Dynamic ORMs with Inheritance,19,https://learn.co/tracks/web-development-immersive-2-0-module-one/dynamic-orm-inheritance-dc-web-062419,dynamic-orm-inheritance-dc-web-062419
+Bonus: Dynamic ORM Lab,19,https://learn.co/tracks/web-development-immersive-2-0-module-one/dynamic-orm-lab-dc-web-062419,dynamic-orm-lab-dc-web-062419
+Translating from ORM to ActiveRecord,20,https://learn.co/tracks/web-development-immersive-2-0-module-one/translating-orm-to-ar-dc-web-062419,translating-orm-to-ar-dc-web-062419
+Intro to Rake,20,https://learn.co/tracks/web-development-immersive-2-0-module-one/intro-to-rake-dc-web-062419,intro-to-rake-dc-web-062419
+Mechanics of Migrations,20,https://learn.co/tracks/web-development-immersive-2-0-module-one/mechanics-of-migrations-dc-web-062419,mechanics-of-migrations-dc-web-062419
+Writing Our Own Migrations,20,https://learn.co/tracks/web-development-immersive-2-0-module-one/writing-migrations-dc-web-062419,writing-migrations-dc-web-062419
+Migrations and ActiveRecord,20,https://learn.co/tracks/web-development-immersive-2-0-module-one/activerecord-costume-store-todo-dc-web-062419,activerecord-costume-store-todo-dc-web-062419
+ActiveRecord CRUD Lab,20,https://learn.co/tracks/web-development-immersive-2-0-module-one/activerecord-crud-dc-web-062419,activerecord-crud-dc-web-062419
+Advanced Finding Lab,20,https://learn.co/tracks/web-development-immersive-2-0-module-one/activerecord-tvshow-dc-web-062419,activerecord-tvshow-dc-web-062419

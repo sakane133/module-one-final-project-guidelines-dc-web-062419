@@ -20,18 +20,18 @@ ActiveRecord::Schema.define(version: 20190708194945) do
   end
 
   create_table "notes", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "student_id"
     t.integer "lesson_id"
     t.text    "note"
   end
 
-  create_table "topics", force: :cascade do |t|
-    t.string "topic"
-  end
-
-  create_table "users", force: :cascade do |t|
+  create_table "students", force: :cascade do |t|
     t.string "name"
     t.string "github_username"
+  end
+
+  create_table "topics", force: :cascade do |t|
+    t.string "topic"
   end
 
 end

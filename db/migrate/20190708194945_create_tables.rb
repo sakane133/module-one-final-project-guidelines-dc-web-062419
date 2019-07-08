@@ -12,11 +12,11 @@ class CreateTables < ActiveRecord::Migration[5.0]
       t.string :repo
     end
     create_table :notes do |t|
-      t.integer :user_id
+      t.integer :student_id
       t.integer :lesson_id
       t.text :note
     end
-    create_table :users do |t|
+    create_table :students do |t|
       t.string :name
       t.string :github_username
     end

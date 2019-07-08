@@ -1,0 +1,23 @@
+user_id,lesson_id,note
+1,14,review for test
+1,14,example with 3-table links
+1,15,review for test
+1,15,todo: ask question about how this works
+1,16,review for test
+1,36,scraper instructions!
+1,37,scraper instructions!
+1,51,todo: learn rake
+1,43,see this lab/repo for importing from csv
+1,25,good example of many-to-many
+1,31,"wait, is super like a variable?"
+1,5,"shows example if instance v class method and how to use ""self"""
+2,52,Migration notes for Activerecord
+2,25,great lab for many to many relationships! 
+2,3,practice for iterating over hashes
+2,12,good notes and examples for OO
+2,27,simple examples of inheritance
+2,36,explanation of scraping
+2,54,migration and ActiveRecord example
+2,54,look back at this lab for help with ActiveRecord
+2,35,"note to self: run ""bundle install"" if shit doesn't work"
+2,49,RUNNN

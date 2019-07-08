@@ -3,6 +3,9 @@ Bundler.require
 # require 'nokogiri'
 require 'open-uri'
 require 'pry'
-
-DB = ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/note_overflow.db')
+require 'csv'
 require_all 'lib'
+
+ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/note_overflow.db')
+
+DB = {:conn => SQLite3::Database.new('./db/note_overflow.db')}
