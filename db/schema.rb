@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20190708194945) do
 
   create_table "lessons", force: :cascade do |t|
-    t.string  "lesson"
+    t.string  "title"
     t.integer "topic_id"
     t.string  "url"
     t.string  "repo"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20190708194945) do
   create_table "notes", force: :cascade do |t|
     t.integer "student_id"
     t.integer "lesson_id"
-    t.text    "note"
+    t.text    "note_text"
   end
 
   create_table "students", force: :cascade do |t|
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20190708194945) do
   end
 
   create_table "topics", force: :cascade do |t|
-    t.string "topic"
+    t.string "name"
   end
 
 end

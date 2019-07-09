@@ -9,18 +9,16 @@ def search
   if search_string.downcase == "menu"
     menu
   elsif
-    lesson_subset = []
-    lesson_subset << Lesson.all.select {|lesson| lesson.class == Lesson}
+    lesson_subset = Lesson.all.select {|lesson| lesson.class == Lesson}
       # TODO
       # search_string in topic
       # search_string in lesson name
       # search_string in repo name
       # search_string in notes
     pretty_print = lesson_subset.map {|lesson|
-      "#{lesson.topic_name} |
-      #{lesson.lesson} |
-      #{lesson.repo} |
-      #{lesson.note_collection}"
+      "#{lesson.topic.name} :: #{lesson.title} :: #{lesson.repo} :: #{lesson.note_collection}
+      
+      "
     }
     puts pretty_print
     puts "Would you like go to the Learn.co page, open your repo, or take a note?"

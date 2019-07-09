@@ -1,13 +1,14 @@
 require "./config/environment.rb"
 
+
 class Lesson < ActiveRecord::Base
-  def topic_name
-    self.topic_id.topic
-  end
+  has_many :notes 
+  belongs_to :topic
+  has_many :students
+
   def note_collection
-    note_array = []
-    note_array << Note.all.select {|note| note.lesson_id = self.id}
-    note_array.map {|note| note.note}
-    note_array.join(" // ")
+    note_array = Note.all.select {|note| note.lesson_id = self.id}
+    note_text_array = note_array.map {|n| n.note_text}
+    note_text_array.join(" // ")
   end
 end
