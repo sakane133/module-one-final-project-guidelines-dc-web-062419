@@ -1,6 +1,5 @@
 require './config/environment.rb'
 
-
 sql = <<-SQL
   INSERT INTO topics (name)
   VALUES (?)

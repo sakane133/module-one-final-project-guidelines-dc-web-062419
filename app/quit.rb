@@ -1,4 +1,4 @@
-def end_of_program
+def quit
     puts "Note Overflow is very sad to see you go!"
- exit 
-end 
+ exit
+end

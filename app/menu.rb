@@ -12,9 +12,9 @@ def menu
   if choice.downcase == "search"
     search
   elsif choice.downcase == "note"
-    note
+    take_note
   elsif choice.downcase == "quit"
-  end_of_program
+    quit
   else
     puts "That's not a valid response."
     menu

@@ -2,9 +2,11 @@ require "./config/environment.rb"
 
 
 class Lesson < ActiveRecord::Base
-  has_many :notes 
+  has_many :notes
   belongs_to :topic
   has_many :students
+
+  # attr_accessor :title, :topic_id, :url, :repo
 
   def note_collection
     note_array = Note.all.select {|note| note.lesson_id = self.id}

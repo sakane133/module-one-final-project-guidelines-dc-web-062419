@@ -9,10 +9,7 @@ def greeting
   puts "managing your Learn.co experience."
   puts ""
   puts "This application will let you: "
-  puts " * look up repos by lesson name (and vice versa)"
   puts " * take notes on lessons"
-  puts " * and search topics, lessons, and notes."
-  puts ""
-  puts "For a menu of options, type \"help\" at any time."
+  puts " * search your topics, lessons, repos, and notes"
   puts ""
 end

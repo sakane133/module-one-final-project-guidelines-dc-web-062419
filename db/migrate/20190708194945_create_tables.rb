@@ -14,7 +14,7 @@ class CreateTables < ActiveRecord::Migration[5.0]
     create_table :notes do |t|
       t.integer :student_id
       t.integer :lesson_id
-      t.text :note_text
+      t.string :note_text
     end
     create_table :students do |t|
       t.string :name
