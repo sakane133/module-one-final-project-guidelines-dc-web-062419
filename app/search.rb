@@ -16,7 +16,8 @@ def search
       # search_string in repo name
       # search_string in notes
     pretty_print = lesson_subset.map {|lesson|
-      "#{lesson.topic.name} :: #{lesson.title} :: #{lesson.repo} :: #{lesson.note_collection}
+      "#{lesson.topic.name} :: #{lesson.title} :: #{lesson.repo} :: 
+      #{lesson.note_collection}
       
       "
     }
