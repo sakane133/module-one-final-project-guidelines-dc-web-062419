@@ -6,7 +6,7 @@ class CreateTables < ActiveRecord::Migration[5.0]
       t.string :topic
     end
     create_table :lessons do |t|
-      t.string :lesson
+      t.string :title
       t.integer :topic_id
       t.string :url
       t.string :repo
