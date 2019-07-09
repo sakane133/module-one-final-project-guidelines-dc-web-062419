@@ -16,27 +16,13 @@ def search
       # search_string in repo name
       # search_string in notes
     pretty_print = lesson_subset.map {|lesson|
-      "#{lesson.topic.name} :: #{lesson.title} :: #{lesson.repo} :: 
+      "#{lesson.topic.name} :: #{lesson.title} :: #{lesson.repo} ::
       #{lesson.note_collection}
-      
+
       "
     }
     puts pretty_print
-    puts "Would you like go to the Learn.co page, open your repo, or take a note?"
-    puts "Choose learn, repo, note, or menu."
-    choice = gets.chomp
-    if choice.downcase == "menu"
-      menu
-    elsif choice.downcase == "learn"
-      learn
-    elsif choice.downcase == "repo"
-      repo
-    elsif choice.downcase == "note"
-      take_note_known_lesson
-    else
-      "That's not a valid response."
-      menu
-    end
+    menu
   else
     "No results found."
     menu
