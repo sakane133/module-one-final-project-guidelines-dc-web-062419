@@ -22,10 +22,17 @@ def search
     lesson_search = Lesson.where("title LIKE ?", like_search_string)
     # search_string in repo name
     repo_search = Lesson.where("repo LIKE ?", like_search_string)
-    # search_string in notes
-    note_search = Lesson.where("url LIKE ?", like_search_string)
+    # search_string in url
+    url_search = Lesson.where("url LIKE ?", like_search_string)
+    #search_string in notes
+    note_set = Note.where("note_text LIKE ?", like_search_string)
+    lesson_id_set = note_set.map {|n| n.lesson_id}
+    lesson_search = lesson_id_set.map {|lid| Lesson.find(lid)}
+
+
     # merge search arrays of lessons
-    lesson_subset = topic_search | lesson_search | repo_search | note_search
+   lesson_subset = topic_search | lesson_search | repo_search | url_search
+
     pretty_print = lesson_subset.map {|lesson|
       "#{lesson.topic.name} :: #{lesson.title} :: #{lesson.repo} ::
       #{lesson.note_collection}
