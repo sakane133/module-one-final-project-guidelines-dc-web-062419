@@ -6,43 +6,44 @@ require_relative '../config/environment'
 def search
   puts "Enter word or phrase: "
   search_string = gets.chomp
+  like_search_string = "%#{search_string.downcase}%"
+  # search_string in topic
+  topic_set = Topic.where("name LIKE ?", like_search_string)
+  topic_ids = topic_set.map {|t| t.id}
+  topic_search = Lesson.all.select {|l|
+    topic_ids.any?{|tid|
+      tid == l.topic_id
+    }
+  }
+  # search_string in lesson name
+  lesson_search = Lesson.where("title LIKE ?", like_search_string)
+  # search_string in repo name
+  repo_search = Lesson.where("repo LIKE ?", like_search_string)
+  # search_string in url
+  url_search = Lesson.where("url LIKE ?", like_search_string)
+  #search_string in notes
+  note_set = Note.where("note_text LIKE ?", like_search_string)
+  filtered_note_set = note_set.select {|n| n.student_id == $this_student}
+  lesson_id_set = filtered_note_set.map {|n| n.lesson_id}
+  note_search = lesson_id_set.map {|lid| Lesson.find(lid)}
+  # merge search arrays of lessons
+  lesson_subset = topic_search | lesson_search | repo_search | url_search | note_search
+  # print out rows with all lesson info
+  pretty_print = lesson_subset.map {|lesson|
+    Rainbow("#{lesson.topic.name} :: ").yellow +
+    Rainbow("#{lesson.title} :: ").cyan +
+    Rainbow("#{lesson.repo} :: ").magenta +
+    Rainbow("#{lesson.note_collection}
+
+      ").white
+  }
   if search_string.downcase == "menu"
     menu
-  elsif     
-    like_search_string = "%#{search_string.downcase}%"  
-    # search_string in topic
-    topic_set = Topic.where("name LIKE ?", like_search_string)
-    topic_ids = topic_set.map {|t| t.id}
-    topic_search = Lesson.all.select {|l| 
-      topic_ids.any?{|tid|
-        tid == l.topic_id
-      }
-    }
-    # search_string in lesson name
-    lesson_search = Lesson.where("title LIKE ?", like_search_string)
-    # search_string in repo name
-    repo_search = Lesson.where("repo LIKE ?", like_search_string)
-    # search_string in url
-    url_search = Lesson.where("url LIKE ?", like_search_string)
-    #search_string in notes
-    note_set = Note.where("note_text LIKE ?", like_search_string)
-    lesson_id_set = note_set.map {|n| n.lesson_id}
-    lesson_search = lesson_id_set.map {|lid| Lesson.find(lid)}
-
-
-    # merge search arrays of lessons
-   lesson_subset = topic_search | lesson_search | repo_search | url_search
-
-    pretty_print = lesson_subset.map {|lesson|
-      "#{lesson.topic.name} :: #{lesson.title} :: #{lesson.repo} ::
-      #{lesson.note_collection}
-
-      "
-    }
-    puts pretty_print
+  elsif lesson_subset.size == 0
+    puts Rainbow("No results found.").red
     menu
   else
-    "No results found."
+    puts pretty_print
     menu
   end
 end

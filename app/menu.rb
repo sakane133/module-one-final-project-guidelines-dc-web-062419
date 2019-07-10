@@ -4,11 +4,11 @@ def menu
   puts "What would you like to do? Your options are:"
   puts ""
   # puts "topics          - search and display topics in Learn.co."
-  puts "search        - search your notes, lessons, repos, and topics"
-  puts "note          - create a note about one of your lessons"
-  puts "learn         - open the Learn.co page for a lesson"
-  puts "repo          - open your forked repo for a lab"
-  puts "quit          - leave Note Overflow"
+  puts Rainbow("    search        - search your notes, lessons, repos, and topics
+    note          - create a note about one of your lessons
+    learn         - open the Learn.co page for a lesson
+    repo          - open your forked repo for a lab
+    quit          - leave Note Overflow").green
   puts ""
   choice = gets.chomp
   if choice.downcase == "search"
