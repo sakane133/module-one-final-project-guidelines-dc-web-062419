@@ -7,7 +7,7 @@ class Lesson < ActiveRecord::Base
   has_many :students
 
   def note_collection
-    note_array = Note.all.select {|note| note.lesson_id == self.id}
+    note_array = Note.all.select {|note| note.lesson_id == self.id && note.student_id == $this_student.id}
     note_text_array = note_array.map {|n| n.note_text}
     note_text_array.join(" // ")
   end

@@ -39,7 +39,7 @@ def search
     menu
   elsif lesson_subset.size == 0
     puts Rainbow("\nNo results found.\n").red
-    menu
+    search
   else
     puts pretty_print
     menu
