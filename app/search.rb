@@ -4,8 +4,8 @@ require_relative '../config/environment'
 # returns a 4-column table with topic, lesson, repo, notes
 
 def search
-  puts "Enter word or phrase: "
-  search_string = gets.chomp
+  puts Rainbow("\nEnter word or phrase: \n").cyan
+  search_string = sanitize(gets.chomp)
   like_search_string = "%#{search_string.downcase}%"
   # search_string in topic
   topic_set = Topic.where("name LIKE ?", like_search_string)
@@ -30,17 +30,15 @@ def search
   lesson_subset = topic_search | lesson_search | repo_search | url_search | note_search
   # print out rows with all lesson info
   pretty_print = lesson_subset.map {|lesson|
-    Rainbow("#{lesson.topic.name} :: ").yellow +
-    Rainbow("#{lesson.title} :: ").cyan +
-    Rainbow("#{lesson.repo} :: ").magenta +
-    Rainbow("#{lesson.note_collection}
-
-      ").white
+    Rainbow("\n#{lesson.topic.name}").yellow +
+    Rainbow(" :: #{lesson.title} :: ").white +
+    Rainbow("#{lesson.repo}").green +
+    Rainbow("\n    #{lesson.note_collection}").white
   }
   if search_string.downcase == "menu"
     menu
   elsif lesson_subset.size == 0
-    puts Rainbow("No results found.").red
+    puts Rainbow("\nNo results found.\n").red
     menu
   else
     puts pretty_print

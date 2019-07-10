@@ -1,6 +1,4 @@
 def quit
-  puts ""
-  puts "Note Overflow is very sad to see you go!"
-  puts ""
+  puts Rainbow("\nNote Overflow is very sad to see you go!\n").yellow
   exit
 end
