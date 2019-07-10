@@ -12,12 +12,3 @@ ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/note_o
 
 DB = {:conn => SQLite3::Database.new('./db/note_overflow.db')}
 ActiveRecord::Base.logger = nil
-
-require 'stringio'
-def silent_warnings
-  old_stderr = $stderr
-  $stderr = StringIO.new
-  yield
-ensure
-  $stderr = old_stderr
-end

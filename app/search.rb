@@ -23,7 +23,7 @@ def search
   url_search = Lesson.where("url LIKE ?", like_search_string)
   #search_string in notes
   note_set = Note.where("note_text LIKE ?", like_search_string)
-  filtered_note_set = note_set.select {|n| n.student_id == $this_student}
+  filtered_note_set = note_set.select {|n| n.student_id == $this_student.id}
   lesson_id_set = filtered_note_set.map {|n| n.lesson_id}
   note_search = lesson_id_set.map {|lid| Lesson.find(lid)}
   # merge search arrays of lessons
