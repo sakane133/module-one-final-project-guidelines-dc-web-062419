@@ -4,6 +4,7 @@ Bundler.require
 require 'open-uri'
 require 'pry'
 require 'csv'
+require 'rainbow'
 require_all 'lib'
 require_all 'app'
 
