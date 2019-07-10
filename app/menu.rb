@@ -1,28 +1,27 @@
 require_relative '../config/environment'
 
 def menu
-  puts "What would you like to do? Your options are:"
-  puts ""
+  puts Rainbow("\nWhat would you like to do? Your options are:\n").cyan
   # puts "topics          - search and display topics in Learn.co."
-  puts "search        - search your notes, lessons, repos, and topics"
-  puts "note          - create a note about one of your lessons"
-  puts "learn         - open the Learn.co page for a lesson"
-  puts "repo          - open your forked repo for a lab"
-  puts "quit          - leave Note Overflow"
+  puts Rainbow("    s           - search your notes, lessons, repos, and topics
+    n           - create a note about one of your lessons
+    l           - open the Learn.co page for a lesson
+    r           - open your forked repo for a lab
+    q           - leave Note Overflow").magenta
   puts ""
-  choice = gets.chomp
-  if choice.downcase == "search"
+  choice = sanitize(gets.chomp)
+  if choice.downcase == "s"
     search
-  elsif choice.downcase == "note"
+  elsif choice.downcase == "n"
     take_note
-  elsif choice.downcase == "learn"
+  elsif choice.downcase == "l"
     learn
-  elsif choice.downcase == "repo"
+  elsif choice.downcase == "r"
     repo
-  elsif choice.downcase == "quit"
+  elsif choice.downcase == "q"
     quit
   else
-    puts "That's not a valid response."
+    puts Rainbow("\nThat's not a valid response.\n").red
     menu
   end
 end

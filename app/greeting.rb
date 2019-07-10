@@ -1,15 +1,15 @@
 require_relative '../config/environment'
 
 def greeting
-  puts "========================="
-  puts "Welcome to Note Overflow!"
-  puts "========================="
-  puts ""
-  puts "Note Overflow offers a command line interface for"
-  puts "managing your Learn.co experience."
-  puts ""
-  puts "This application will let you: "
-  puts " * take notes on lessons"
-  puts " * search your topics, lessons, repos, and notes"
-  puts ""
+  puts Rainbow("  =========================
+  Welcome to Note Overflow!
+  =========================
+
+  Note Overflow offers a command line interface for
+  managing your Learn.co experience.
+
+  This application will let you:
+   * take notes on lessons
+   * search your topics, lessons, repos, and notes
+  ").cyan
 end
