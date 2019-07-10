@@ -1,6 +1,6 @@
 require 'bundler'
 Bundler.require
-# require 'nokogiri'
+require 'nokogiri'
 require 'open-uri'
 require 'pry'
 require 'csv'
