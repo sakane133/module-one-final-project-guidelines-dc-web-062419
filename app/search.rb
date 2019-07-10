@@ -38,7 +38,7 @@ def search
   if search_string.downcase == "menu"
     menu
   elsif lesson_subset.size == 0
-    puts Rainbow("\nNo results found.\n").red
+    puts Rainbow("\nNo results found. Please try again.").red
     search
   else
     puts pretty_print

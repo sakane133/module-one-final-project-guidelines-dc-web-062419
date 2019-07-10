@@ -21,6 +21,7 @@ GEM
     minitest (5.10.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
+    open_uri_redirections (0.2.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -50,6 +51,7 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri
+  open_uri_redirections
   pry
   rainbow
   require_all

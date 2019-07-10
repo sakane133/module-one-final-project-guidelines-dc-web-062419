@@ -3,12 +3,11 @@ require_relative '../config/environment'
 def menu
   puts Rainbow("\nWhat would you like to do? Your options are:\n").cyan
   # puts "topics          - search and display topics in Learn.co."
-  puts Rainbow("    s           - search your notes, lessons, repos, and topics
-    n           - create a note about one of your lessons
-    l           - open the Learn.co page for a lesson
-    r           - open your forked repo for a lab
-    q           - leave Note Overflow").magenta
-  puts ""
+  puts Rainbow("    s: search your notes, lessons, repos, and topics
+    n: create a note about one of your lessons
+    l: open the Learn.co page for a lesson
+    r: open your forked repo for a lab
+    q: leave Note Overflow\n").magenta
   choice = sanitize(gets.chomp)
   if choice.downcase == "s"
     search

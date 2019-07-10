@@ -1,7 +1,7 @@
 require 'bundler'
 Bundler.require
 require 'nokogiri'
-require 'open-uri'
+require 'open_uri_redirections'
 require 'pry'
 require 'csv'
 require 'rainbow'

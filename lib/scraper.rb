@@ -2,11 +2,11 @@ require './config/environment.rb'
 
 class Scraper
   def scrape_index
-    #TODO: this assumes this website is a local file. Need to actually pull from internet.
-    html = File.read("https://learn.co/tracks/web-development-immersive-2-0-module-one")
-    home_page = Nokogiri::HTML(html)
-    nav_tree = home_page.css("div.menu site-nav-wrapper")
-    binding.pry # check what "nav_tree" returns
+    html = open("https://learn.co/tracks/web-development-immersive-2-0-module-one")
+    # TODO: not able to pull from page where user is logged in.
+    nav_tree = home_page.css(".site-nav__item")
+    # nav_tree = home_page.css("div.menu.site-nav-wrapper li.site-nav__item.site-nav__item--level-1")
+    # binding.pry # check what "nav_tree" returns
     lessons_array = []
     nav_tree.each do |lsn|
       # binding.pry # check what "l" returns - should only be one lesson
@@ -22,5 +22,5 @@ class Scraper
   end
 end
 
-test = Scraper.new
-test.scrape_index
+# test = Scraper.new
+# test.scrape_index
