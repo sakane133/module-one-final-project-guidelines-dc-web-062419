@@ -1,5 +1,7 @@
 require './config/environment.rb'
 
+# ignore this: it didn't make the cut
+
 class Scraper
   def scrape_index
     html = open("https://learn.co/tracks/web-development-immersive-2-0-module-one")

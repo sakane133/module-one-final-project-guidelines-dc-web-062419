@@ -1,6 +1,6 @@
 require_relative '../config/environment'
 
-# This method takes in a lesson name and opens the student's repo
+# takes in a lesson name and opens the student's repo
 # in their browser of choice
 
 def repo_learn
