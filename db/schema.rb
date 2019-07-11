@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20190708194945) do
   create_table "notes", force: :cascade do |t|
     t.integer "student_id"
     t.integer "lesson_id"
-    t.string  "note_text"
+    t.text    "note_text"
   end
 
   create_table "students", force: :cascade do |t|
