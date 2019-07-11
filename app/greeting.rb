@@ -13,5 +13,7 @@ def greeting
   This application will let you:
    * take notes on lessons
    * search your topics, lessons, repos, and notes
+   * open repos from the console
+   * open Learn.co from the console
   ").cyan
 end
