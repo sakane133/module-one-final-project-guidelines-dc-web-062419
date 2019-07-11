@@ -4,7 +4,7 @@ require_relative '../config/environment'
 # returns a 4-column table with topic, lesson, repo, notes
 
 def search
-  puts Rainbow("\nEnter word or phrase: \n").cyan
+  puts Rainbow("\nEnter word or phrase. (Type \"m\" for menu or \"q\" to quit.) \n").cyan
   search_string = sanitize(gets.chomp)
   like_search_string = "%#{search_string.downcase}%"
   # search_string in topic
@@ -33,8 +33,10 @@ def search
     Rainbow("#{lesson.repo}").green +
     Rainbow("\n    #{lesson.note_collection}").white
   }
-  if search_string.downcase == "menu"
+  if search_string.downcase == "m"
     menu
+  elsif search_string.downcase == "q"
+    quit
   elsif lesson_subset.size == 0
     puts Rainbow("\nNo results found. Please try again.").red
     search
