@@ -5,7 +5,7 @@ user_id,lesson_id,note
 1,15,todo: ask question about how this works
 1,16,review for test
 1,36,scraper instructions!
-1,37,scraper instructions!
+1,37,more scraper instructions!
 1,51,todo: learn rake
 1,43,see this lab/repo for importing from csv
 1,25,good example of many-to-many
@@ -19,5 +19,5 @@ user_id,lesson_id,note
 2,36,explanation of scraping
 2,54,migration and ActiveRecord example
 2,54,look back at this lab for help with ActiveRecord
-2,35,"note to self: run ""bundle install"" if shit doesn't work"
-2,49,RUNNN
+2,35,"note to self: run ""bundle install"" if this doesn't work"
+2,49,very interesting
