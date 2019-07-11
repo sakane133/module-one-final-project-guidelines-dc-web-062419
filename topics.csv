@@ -1,12 +1,10 @@
 topic
-Ruby | Introduction
-Ruby | A Deeper Dive into Enumerables
-Ruby | More on Hashes
-Ruby | Ruby Group Project
+Object Oriented Ruby | Intro to Object Orientation
 Object Oriented Ruby | Classes and Instances
 Object Oriented Ruby | Instance Methods
 Object Oriented Ruby | Object Properties
 Object Oriented Ruby | Object Lifecycle
+Object Oriented Ruby | OO Design Principles
 Object Oriented Ruby | Object's Self
 Object Oriented Ruby | Class Variables and Methods
 Object Oriented Ruby | Object Models
@@ -15,7 +13,15 @@ Object Oriented Ruby | Object Relationships
 Object Oriented Ruby | Object Architecture
 Object Oriented Ruby | Metaprogramming
 Object Oriented Ruby | BONUS: Scraping
+Object Oriented Ruby | BONUS: OO Working with APIs
+SQL | Topic Introduction
 SQL | Getting Started
 SQL | Table Relations
 ORMs and ActiveRecord | ORMs
 ORMs and ActiveRecord | ActiveRecord
+ORMs and ActiveRecord | Associations
+Practice | OO Ruby
+Discussion Questions | Week One
+Discussion Questions | Week Two
+Discussion Questions | Whiteboard Challenges
+Project Mode | Projects
