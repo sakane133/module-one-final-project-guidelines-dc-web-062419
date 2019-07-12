@@ -1,33 +1,17 @@
 require './config/environment.rb'
 
-sql = <<-SQL
-  INSERT INTO topics (name)
-  VALUES (?)
-SQL
 CSV.foreach("topics.csv", headers: true) do |row|
-  DB[:conn].execute(sql,row.fields)
+  Topic.find_or_create_by(name: row[0])
 end
 
-sql = <<-SQL
-  INSERT INTO lessons (title, topic_id, url, repo )
-  VALUES (?, ?, ?, ?)
-SQL
 CSV.foreach("lessons.csv", headers: true) do |row|
-  DB[:conn].execute(sql,row.fields)
+  Lesson.find_or_create_by(title: row[0], topic_id: row[1], url: row[2], repo: row[3])
 end
 
-sql = <<-SQL
-  INSERT INTO notes (student_id, lesson_id, note_text)
-  VALUES (?, ?, ?)
-SQL
 CSV.foreach("notes.csv", headers: true) do |row|
-  DB[:conn].execute(sql,row.fields)
+  Note.find_or_create_by(student_id: row[0], lesson_id: row[1], note_text: row[2])
 end
 
-sql = <<-SQL
-  INSERT INTO students (name, github_username)
-  VALUES (?, ?)
-SQL
 CSV.foreach("students.csv", headers: true) do |row|
-  DB[:conn].execute(sql,row.fields)
+  Student.find_or_create_by(name: row[0], github_username: row[1])
 end
