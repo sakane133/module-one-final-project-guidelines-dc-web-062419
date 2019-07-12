@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # print out rows of lessons with color-coded lesson info
 
 def pretty_print(lesson_subset)

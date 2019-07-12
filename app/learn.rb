@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # This method takes in a lesson name and opens the Learn.co URL
 # in someone's browser of choice
 

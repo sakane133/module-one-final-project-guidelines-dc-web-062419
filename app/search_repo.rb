@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # takes in a search string formatted for SQL "like" search
 # returns set of lessons where the search string appears in the repo
 

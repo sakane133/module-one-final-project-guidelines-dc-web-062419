@@ -1,10 +1,8 @@
-require_relative '../config/environment'
-
 # looks for string within topics, lessons, repos, or notes
 # returns a 4-column table with topic, lesson, repo, notes
 
 def search
-  
+
   # get search string
   puts Rainbow("\nEnter word or phrase. (Type \"m\" for menu or \"q\" to quit.) \n").cyan
   search_string = sanitize(gets.chomp)

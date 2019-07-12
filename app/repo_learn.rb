@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # takes in a lesson name and opens the student's repo
 # in their browser of choice
 

@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # prints greeting and menu of options
 
 def greeting

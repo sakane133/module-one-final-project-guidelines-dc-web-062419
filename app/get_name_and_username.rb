@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # takes in user name
 # creates in new user if they don't already exist
 # prints thanks/start message

@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # prints menu, takes in choice, executes relevant subroutine
 
 def menu

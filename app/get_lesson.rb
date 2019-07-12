@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # takes in name of lesson of interest, returns instance of lesson
 
 def get_lesson

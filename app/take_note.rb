@@ -1,5 +1,3 @@
-require_relative '../config/environment'
-
 # finds lesson based on lesson title entered by user
 # takes note as input from user, saves note
 # prints "saved" message
