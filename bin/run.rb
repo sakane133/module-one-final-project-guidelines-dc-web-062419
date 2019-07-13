@@ -1,5 +1,7 @@
 require_relative '../config/environment'
 
-greeting
-get_name_and_username
-menu
+
+  this_session = Cli.new
+  this_session.this_student
+  this_session.get_username
+  menu

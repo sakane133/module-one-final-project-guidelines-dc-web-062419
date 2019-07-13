@@ -1,7 +1,5 @@
-# prints menu, takes in choice, executes relevant subroutine
-
+# prints menu, takes in choice, executes relevant methods
 def menu
-
   # prints menu and options
   puts Rainbow("\nWhat would you like to do? Your options are:\n").cyan
   puts Rainbow("    s: search your notes, lessons, repos, and topics
@@ -10,10 +8,8 @@ def menu
     r: open your forked repo for a lab
     o: open the original learn.co repo for a lab
     q: leave Note Overflow\n").magenta
-
   # takes in user's choice
   choice = sanitize(gets.chomp)
-
   # executes user's choice
   if choice.downcase == "s"
     search
