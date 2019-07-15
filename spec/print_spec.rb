@@ -1,4 +1,4 @@
-require_relative "../app/search_repo.rb"
+require_relative "../app/modules/print.rb"
 
 describe "search_repo" do
 
@@ -12,8 +12,8 @@ describe "search_repo" do
     Lesson.destroy(@learnings2.id)
   end
 
-  it "takes in a 'like' search string; returns lesson array with that string in the repo" do
-      search_repo("%-stuff2%").include?(@learnings2)
+  it "gets a lesson's notes" do
+    expect(note_collection(@learnings)).to eq("#{@note.note_text} // #{@note2.note_text}")
   end
 
 end

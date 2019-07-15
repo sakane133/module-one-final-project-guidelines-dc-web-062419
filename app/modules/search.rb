@@ -50,7 +50,7 @@ module Search
       puts Rainbow("\nNo results found. Please try again.").red
       search
     else
-      puts pretty_print(lesson_subset)
+      puts print(lesson_subset)
       menu
     end
   end

@@ -42,8 +42,4 @@ describe Lesson do
     Lesson.all.include?(@learnings)
   end
 
-  it "gets a lesson's notes" do
-    expect(@learnings.note_collection).to eq("#{@note.note_text} // #{@note2.note_text}")
-  end
-
 end

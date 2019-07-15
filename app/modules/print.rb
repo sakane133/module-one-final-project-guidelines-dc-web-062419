@@ -6,7 +6,7 @@ module Print
     note_text_array.join(" // ")
   end
   # print out rows of lessons with color-coded lesson info
-  def pretty_print(lesson_subset)
+  def print(lesson_subset)
     lesson_subset.map {|lesson|
       Rainbow("\n#{lesson.topic.name}").yellow +
       Rainbow(" :: #{lesson.title} :: ").white +
