@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190708194945) do
+ActiveRecord::Schema.define(version: 2019_07_08_194945) do
 
   create_table "lessons", force: :cascade do |t|
-    t.string  "title"
+    t.string "title"
     t.integer "topic_id"
-    t.string  "url"
-    t.string  "repo"
+    t.string "url"
+    t.string "repo"
   end
 
   create_table "notes", force: :cascade do |t|
     t.integer "student_id"
     t.integer "lesson_id"
-    t.string  "note_text"
+    t.string "note_text"
   end
 
   create_table "students", force: :cascade do |t|
